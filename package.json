@@ -1,0 +1,26 @@
+{
+  "name": "docgen-to-dts",
+  "version": "1.0.0",
+  "description": "Generates d.ts files based on docken description",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js gen ./examples/Select.description.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MinskJson/docgen-to-dts.git"
+  },
+  "author": "Minsk JSON",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MinskJson/docgen-to-dts/issues"
+  },
+  "homepage": "https://github.com/MinskJson/docgen-to-dts#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
