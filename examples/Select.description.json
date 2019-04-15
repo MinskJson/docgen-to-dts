@@ -1,0 +1,367 @@
+{
+  "description": "",
+  "propTypes": {
+    "allowClear": {
+      "description": "Show clear button.",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "value": "false"
+      },
+      "required": "false"
+    },
+    "autoFocus": {
+      "description": "Get focus by default",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "value": "false"
+      },
+      "required": "false"
+    },
+    "defaultActiveFirstOption": {
+      "description": "Whether active first option by default",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "value": "true"
+      },
+      "required": "false"
+    },
+    "defaultValue": {
+      "description": "Initial selected option.",
+      "type": {
+        "name": "string<!-- -->|<!-- -->string<!-- -->[<!-- -->]<br>number<!-- -->|<!-- -->number<!-- -->[<!-- -->]"
+      },
+      "defaultValue": {
+        "value": "-"
+      },
+      "required": "false"
+    },
+    "disabled": {
+      "description": "Whether disabled select",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "value": "false"
+      },
+      "required": "false"
+    },
+    "dropdownClassName": {
+      "description": "className of dropdown menu",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "value": "-"
+      },
+      "required": "false"
+    },
+    "dropdownMatchSelectWidth": {
+      "description": "Whether dropdown's width is same with select.",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "value": "true"
+      },
+      "required": "false"
+    },
+    "dropdownStyle": {
+      "description": "style of dropdown menu",
+      "type": {
+        "name": "object"
+      },
+      "defaultValue": {
+        "value": "-"
+      },
+      "required": "false"
+    },
+    "filterOption": {
+      "description": "If true, filter options by input, if function, filter options against it. The function will receive two arguments, <code>inputValue</code> and <code>option</code>, if the function returns <code>true</code>, the option will be included in the filtered set; Otherwise, it will be excluded.",
+      "type": {
+        "name": "boolean or function(inputValue, option)"
+      },
+      "defaultValue": {
+        "value": "true"
+      },
+      "required": "false"
+    },
+    "firstActiveValue": {
+      "description": "Value of action option by default",
+      "type": {
+        "name": "string<!-- -->|<!-- -->string<!-- -->[<!-- -->]"
+      },
+      "defaultValue": {
+        "value": "-"
+      },
+      "required": "false"
+    },
+    "getPopupContainer": {
+      "description": "Parent Node which the selector should be rendered to. Default to <code>body</code>. When position issues happen, try to modify it into scrollable content and position it relative. <a href=\"https://codesandbox.io/s/4j168r7jw0\">Example</a>",
+      "type": {
+        "name": "function(triggerNode)"
+      },
+      "defaultValue": {
+        "value": "() =&gt; document.body"
+      },
+      "required": "false"
+    },
+    "labelInValue": {
+      "description": "whether to embed label in value, turn the format of value from <code>string</code> to <code>{key: string, label: ReactNode}</code>",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "value": "false"
+      },
+      "required": "false"
+    },
+    "maxTagCount": {
+      "description": "Max tag count to show",
+      "type": {
+        "name": "number"
+      },
+      "defaultValue": {
+        "value": "-"
+      },
+      "required": "false"
+    },
+    "maxTagPlaceholder": {
+      "description": "Placeholder for not showing tags",
+      "type": {
+        "name": "ReactNode/function(omittedValues)"
+      },
+      "defaultValue": {
+        "value": "-"
+      },
+      "required": "false"
+    },
+    "mode": {
+      "description": "Set mode of Select (Support after 2.9)",
+      "type": {
+        "name": "'default' <!-- -->|<!-- --> 'multiple' <!-- -->|<!-- --> 'tags'"
+      },
+      "defaultValue": {
+        "value": "'default'"
+      },
+      "required": "false"
+    },
+    "notFoundContent": {
+      "description": "Specify content to show when no result matches..",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "value": "'Not Found'"
+      },
+      "required": "false"
+    },
+    "optionFilterProp": {
+      "description": "Which prop value of option will be used for filter if filterOption is true",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "value": "value"
+      },
+      "required": "false"
+    },
+    "optionLabelProp": {
+      "description": "Which prop value of option will render as content of select.",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "value": "<code>value</code> for <code>combobox</code>, <code>children</code> for other modes"
+      },
+      "required": "false"
+    },
+    "placeholder": {
+      "description": "Placeholder of select",
+      "type": {
+        "name": "string<!-- -->|<!-- -->ReactNode"
+      },
+      "defaultValue": {
+        "value": "-"
+      },
+      "required": "false"
+    },
+    "showArrow": {
+      "description": "Whether to show the drop-down arrow",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "value": "true"
+      },
+      "required": "false"
+    },
+    "showSearch": {
+      "description": "Whether show search input in single mode.",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "value": "false"
+      },
+      "required": "false"
+    },
+    "size": {
+      "description": "Size of Select input. <code>default</code> <code>large</code> <code>small</code>",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "value": "default"
+      },
+      "required": "false"
+    },
+    "tokenSeparators": {
+      "description": "Separator used to tokenize on tag/multiple mode",
+      "type": {
+        "name": "string<!-- -->[<!-- -->]"
+      },
+      "defaultValue": {
+        "value": ""
+      },
+      "required": "false"
+    },
+    "value": {
+      "description": "Current selected option.",
+      "type": {
+        "name": "string<!-- -->|<!-- -->number<!-- -->|<!-- -->string<!-- -->[<!-- -->]<!-- -->|<!-- -->number<!-- -->[<!-- -->]"
+      },
+      "defaultValue": {
+        "value": "-"
+      },
+      "required": "false"
+    },
+    "onBlur": {
+      "description": "Called when blur",
+      "type": {
+        "name": "function"
+      },
+      "defaultValue": {
+        "value": "-"
+      },
+      "required": "false"
+    },
+    "onChange": {
+      "description": "Called when select an option or input value change, or value of input is changed in combobox mode",
+      "type": {
+        "name": "function(value, option:Option/Array<!-- -->&lt;<!-- -->Option&gt;)"
+      },
+      "defaultValue": {
+        "value": "-"
+      },
+      "required": "false"
+    },
+    "onDeselect": {
+      "description": "Called when a option is deselected, the params are option's value (or key) . only called for multiple or tags, effective in multiple or tags mode only.",
+      "type": {
+        "name": "function(value, option:Option)"
+      },
+      "defaultValue": {
+        "value": "-"
+      },
+      "required": "false"
+    },
+    "onFocus": {
+      "description": "Called when focus",
+      "type": {
+        "name": "function"
+      },
+      "defaultValue": {
+        "value": "-"
+      },
+      "required": "false"
+    },
+    "onInputKeyDown": {
+      "description": "Called when key pressed",
+      "type": {
+        "name": "function"
+      },
+      "defaultValue": {
+        "value": "-"
+      },
+      "required": "false"
+    },
+    "onMouseEnter": {
+      "description": "Called when mouse enter",
+      "type": {
+        "name": "function"
+      },
+      "defaultValue": {
+        "value": "-"
+      },
+      "required": "false"
+    },
+    "onMouseLeave": {
+      "description": "Called when mouse leave",
+      "type": {
+        "name": "function"
+      },
+      "defaultValue": {
+        "value": "-"
+      },
+      "required": "false"
+    },
+    "onPopupScroll": {
+      "description": "Called when dropdown scrolls",
+      "type": {
+        "name": "function"
+      },
+      "defaultValue": {
+        "value": "-"
+      },
+      "required": "false"
+    },
+    "onSearch": {
+      "description": "Callback function that is fired when input changed.",
+      "type": {
+        "name": "function(value: string)"
+      },
+      "defaultValue": {
+        "value": ""
+      },
+      "required": "false"
+    },
+    "onSelect": {
+      "description": "Called when a option is selected, the params are option's value (or key) and option instance.",
+      "type": {
+        "name": "function(value, option:Option)"
+      },
+      "defaultValue": {
+        "value": "-"
+      },
+      "required": "false"
+    },
+    "open": {
+      "description": "controlled open state of dropdown",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "value": "-"
+      },
+      "required": "false"
+    },
+    "onDropdownVisibleChange": {
+      "description": "call when dropdown open",
+      "type": {
+        "name": "function(open)"
+      },
+      "defaultValue": {
+        "value": "-"
+      },
+      "required": "false"
+    }
+  },
+  "antLink": "https://ant.design/components/select/",
+  "storySource": ""
+}
